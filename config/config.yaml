@@ -1,0 +1,15 @@
+training_pipeline_config:
+  pipeline_name: complaints
+  artifact_dir: artifact
+
+data_ingestion_config:
+  dataset_download_url: https://storage.googleapis.com/kaggle-data-sets/33/793516/compressed/consumer_complaints.csv.zip?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20220623%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220623T065119Z&X-Goog-Expires=259199&X-Goog-SignedHeaders=host&X-Goog-Signature=3e5a0097af6d02b76c72172560c8808bcef8c37a2d4da6ed1b8002eec685066dc430761e23f13c57fe35f8081de494f803809bdcf8e44c64d84f2ec2eecf2d1e45b24371dd2fd1a8a44a410967dffad686d005b1f11655fd89082c9765929f2e2919adde42173b7cbea49cbbb5685c7eab5336a185ffe53fcd19e7b4537fdb7f068346a8081b782dcf1a14a7e2f274e8a286aa1384fb77dd8798d109b7c37e2c808ea941e6233c73922954c0850ad3c8df8cc052a996a8a4322762a4f7b138e5462afd416d801bdc9a7f96c9a7594d2304ad670c3e11717d8c8572a55338b1f1a4cc99d8d706d9dc3e235b66953b8f8fa79e4e76b96fae383d902426d7ebbdd5
+  raw_data_dir: raw_data
+  zip_download_dir: zip_data
+  ingested_dir: ingested_data
+  schema_file_name: schema.yaml
+  
+
+data_validation_config:
+  validated_train_dir: train
+  validated_test_dir: test 

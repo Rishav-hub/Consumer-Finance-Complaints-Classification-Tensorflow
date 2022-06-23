@@ -1,0 +1,14 @@
+matplotlib
+pandas
+numpy
+notebook
+sklearn
+tensorflow
+scikit-plot
+scipy 
+PyYAML
+gunicorn
+-e .
+six
+dill
+Flask
